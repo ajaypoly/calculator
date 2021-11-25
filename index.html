@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:600,700" rel="stylesheet">
+		<title>A simple calculator</title>
+		<link rel="stylesheet" href="./cal.css">
+	</head>
+	<body>
+		<div id="container">
+			<div id="calculator">
+				<div id="result">
+					<input type="text" id="results">
+					<div id="history">
+						<p id="history-value"></p>
+					</div>
+					<div id="output">
+						<p id="output-value"></p>
+					</div>
+				</div>
+				<div id="keyboard">
+					<button class="operator" onclick="clearbox()" id="clear">C</button>
+					<button class="operator" onclick="backspace()" id="backspace">CE</button>
+					<button class="operator" onclick="displayValue('%')" id="%">%</button>
+					<button class="operator"onclick="displayValue('/')" id="/">&#247;</button>
+					<button class="number" onclick="displayValue('7')" id="7">7</button>
+					<button class="number" onclick="displayValue('8')" id="8">8</button>
+					<button class="number"onclick="displayValue('9')" id="9">9</button>
+					<button class="operator"onclick="displayValue('*')" id="*">&times;</button>
+					<button class="number" onclick="displayValue('4')" id="4">4</button>
+					<button class="number"onclick="displayValue('5')" id="5">5</button>
+					<button class="number" onclick="displayValue('6')"id="6">6</button>
+					<button class="operator" id="-">-</button>
+					<button class="number"  onclick="displayValue('1')"id="1">1</button>
+					<button class="number"onclick="displayValue('2')" id="2">2</button>
+					<button class="number" onclick="displayValue('3')"id="3">3</button>
+					<button class="operator"onclick="displayValue('+')" id="+">+</button>
+					<button class="empty" id="empty"></button>
+					<button class="number"onclick="displayValue('0')" id="0">0</button>
+					<button class="empty" id="empty"></button>
+					<button class="operator" onclick="evaluateExp()" id="=">=</button>
+				</div>
+			</div>
+		</div>
+	</body>
+
+	<script src="./script.js"></script>
+</html>
